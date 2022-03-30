@@ -13,9 +13,16 @@ export class Satellite {
 		this.orbitType = orbitType;
 		this.operational = operational;
    }
+
 	
 	isSpaceDebris(): boolean {
-		return true;
+		//doesnt seem like this function is even getting called anywhere...
+		if(this.type === 'Space Debris') {
+			return true;
+		}
+		else {
+			return false;
+		}
    }
 
 }
